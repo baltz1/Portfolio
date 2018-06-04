@@ -1,0 +1,199 @@
+#about{
+  padding: 8em 0;
+  &:focus{
+    outline: none;
+  }
+  .container{
+    .row{
+      position: relative;
+      .abt-display{
+        height: 400px;
+        h2{
+          color: #545454;
+          position: absolute;
+          bottom: 19%;
+          font-weight: 700;
+          font-size: 2.5em;
+          display: block;
+          span{
+            color: #002454;
+          }
+        }
+      }
+      .abt-content{
+        padding-top: 25%;
+        p{
+          line-height: 1.5;
+          color: #545454;
+          opacity: 0;
+          &:nth-child(1){
+            font-weight: 600;
+            padding-bottom: 5%;
+            text-align: center;
+          }
+        }
+      }
+      .icons{
+        position: relative;
+        bottom: -3em;
+        width: 80%;
+        margin: 0 auto;
+        opacity: 0;
+        .icon{
+          display: inline-block;
+          padding-left: 13%;
+          a{
+            padding-right: 16%;
+            color: white;
+            i{
+              color: white;
+              background: linear-gradient(to right,rgb(76,43,99), rgb(15,12,62));
+              border-radius: 50%;
+              width: 25px;
+              height: 25px;
+              text-align: center;
+              line-height: 1.5;
+            }
+          }
+          // targeting indivdual icons
+          &:nth-child(1){
+            i{
+              &:hover{
+               background: linear-gradient(to right, #00c6ff, #0072ff);
+              }
+            }
+          }
+          &:nth-child(2){
+            i{
+              &:hover{
+                background: #833ab4;
+                background: -webkit-linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+                background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+              ;
+                            }
+            }
+          }
+          &:nth-child(3){
+            i{
+              &:hover{
+               background: linear-gradient(to bottom, #00c6ff, #0072ff);
+              }
+            }
+          }
+          &:nth-child(4){
+            i{
+              &:hover{
+                color: white;
+                background: #232526;
+                background: -webkit-linear-gradient(to right, #000000, #545454);
+                background: linear-gradient(to right, #545454, #ECEDED);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Responsive Css
+
+@media only screen and (max-width: 1300px){
+  #about{
+    .container{
+      .row{
+        .abt-display{
+          h2{
+            bottom: 19%;
+            padding-left: 3%;
+          }
+        }
+        .abt-content{
+          padding-top: 15%;
+        }
+        .img-fluid{
+          width: 80%;
+          padding-top: 10%;
+          display: flex;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1008px){
+  #about{
+    padding: 5em 0 13em 0;
+    .container{
+      .row{
+        padding-bottom: 4em;
+        .abt-display{
+          height: 80px;
+          text-align: center;
+          h2{
+            position: relative;
+            display: inline-block;
+            font-size: 3.8em;
+            br{
+              display: none;
+            }
+            span{
+              padding-left: .6em;
+            }
+          }
+        }
+        .abt-content{
+          padding: 22% 10px 0 10px;
+        }
+        .img-fluid{
+          padding-top: 5%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px){
+  #about{
+    padding: 5em 0 11em 0;
+    .container{
+      .row{
+        .abt-content{
+          padding: 15% 10px 0 10px;
+        }
+        .img-fluid{
+          max-width: 400px;
+          padding-top: 15%;
+          content: url('/img/paraphoto.jpg');
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 451px){
+  #about{
+    padding: 5em 0 8em 0;
+    .container{
+      .row{
+        .abt-display{
+          h2{
+            font-size: 2.9em;
+            padding-top: 5%;
+            span{
+              padding-left: .4em;
+            }
+          }
+        }
+        .abt-content{
+          padding: 10% 10px 0 10px;
+        }
+        .icons{
+          .icon{
+            padding-left: 10%;
+          }
+        }
+        .img-fluid{
+          padding-top: 20%;
+        }
+      }
+    }
+  }
+}

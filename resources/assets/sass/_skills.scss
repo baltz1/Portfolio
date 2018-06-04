@@ -1,0 +1,94 @@
+#skills{
+  padding: 6em 0;
+  background: #f6f6f6;
+  &:focus{
+    outline: none;
+  }
+  .skill{
+    margin: 10px;
+    padding: 10px;
+    h5{
+      color: #545454;
+      font-weight: 600;
+      margin-bottom: .8rem;
+    }
+    .bar{
+      background: white;
+      height: 15px;
+      border-radius: 15px;
+      max-width: 80%;
+      .bar-fill{
+        height: 15px;
+        border-radius: 15px;
+        width: 0%;
+        background: linear-gradient(to  right, rgba(76,43,99, .7), rgba(0, 36, 84, .7));
+        // transition: all .4s ease-in-out;
+        .bar-percent{
+          .percent{
+            vertical-align: middle;
+            line-height: normal;
+            font-size: 12px;
+            font-weight: 600;
+            padding-left: 10px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .title{
+    position: relative;
+    h2{
+      color: #545454;
+      font-weight: 700;
+      font-size: 2.5em;
+      position: absolute;
+      top: 3em;
+      span{
+        color:#002454;
+      }
+    }
+  }
+}
+// Responsive Css
+
+@media only screen and (max-width: 1008px){
+  #skills{
+    padding: 5em 0 13em 0;
+    .title{
+      text-align: center;
+      padding-bottom: 5em;
+      h2{
+        position: relative;
+        top: 0;
+        font-size: 3.8em;
+        br{
+          display: none;
+        }
+        span{
+          padding-left: .6em;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px){
+  #skills{
+    padding: 5em 0 11em 0;
+    .title{
+      padding-bottom: 3em;
+    }
+  }
+}
+@media only screen and (max-width: 451px){
+  #skills{
+    .title{
+      h2{
+        font-size: 2.9em;
+        span{
+          padding-left: .4em;
+        }
+      }
+    }
+  }
+}
